@@ -64,5 +64,6 @@ jobs:
         with:
           context: .
           push: true
+          platforms: linux/arm64
           tags: ${{ secrets.DH_USERNAME }}/ai2:${{ github.sha }}
           labels: ${{ secrets.DH_USERNAME }}/ai2:${{ github.sha }}
